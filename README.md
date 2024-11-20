@@ -19,7 +19,7 @@ This repository contains the source code for all data processing and the applica
 - **R version 4.2.0** 
 - RStudio (optional but recommended)
 
-## Packages
+### Packages
 
 - **prospectr (version 0.2.3)**: Used for calculating the first derivative for each sample spectrum with the `savitzkyGolay` function.
 - **stats (version 4.1.2)**: Utilized for HCA with the `hclust` function, PCA with the `prcomp` function, and one-way ANOVA with the `aov` function.
