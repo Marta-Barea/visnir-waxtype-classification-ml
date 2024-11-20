@@ -4,16 +4,22 @@
 
 This repository contains the source code for all data processing and the application of machine learning algorithms used in the article "Rapid Classification of Petroleum Waxes: A Vis-NIR Spectroscopy and Machine Learning Approach".
 
-## Contents
+---
+
+## 📂 Repository Structure
 
 - `spectra/`: Folder containing the spectra data.
 - `supervised algorithms/`: Source code for all the supervised machine learning models and experiments.
 - `unsupervised algorithms/`: Source code related to unsupervised learning techniques and clustering.
 - `App/`: A Shiny application to demonstrate and visualize the findings.
 
-## Requirements
+## 🛠️ **System Requirements**
 
-All data analysis was performed with **R (version 4.1.2)**. The software and packages used include:
+### Software
+- **R version 4.2.0** 
+- RStudio (optional but recommended)
+
+## Packages
 
 - **prospectr (version 0.2.3)**: Used for calculating the first derivative for each sample spectrum with the `savitzkyGolay` function.
 - **stats (version 4.1.2)**: Utilized for HCA with the `hclust` function, PCA with the `prcomp` function, and one-way ANOVA with the `aov` function.
@@ -25,9 +31,41 @@ All data analysis was performed with **R (version 4.1.2)**. The software and pac
 - **ggiraphExtra (version 0.3.0)**: Assisted in generating the spectralprint radar chart.
 - **shiny (version 1.7.1)**: Utilized for developing the web application.
 
-## Usage
+## ⚙️ How to Use This Repository
 
-1. Clone the repository.
-2. Ensure that the necessary versions of R and packages are installed.
-3. Navigate to the respective folders and run the scripts to reproduce the results or launch the Shiny app.
+### Clone the Repository
+
+
+   <pre markdown="1"> ```bash
+git clone https://github.com/Marta-Barea/Breadcrumbsvisnir-waxtype-classification-ml
+cd Breadcrumbsvisnir-waxtype-classification-ml </pre>
+
+### Running the Shiny Application
+1. Place `app.R`, `svm.rds`, `svr.rds`and `test_data.xlsx` in the same folder.
+2. In your R console, run: 
+   
+   <pre markdown="1"> ```R 
+      shiny::runApp("app.R") </pre>
+
+3. Use the web interface to:
+- 📁 **Upload** `.csv` or `.xlsx` data files.
+- 🛠️ **Preprocess** data using advanced filtering techniques.
+- 🤖 **Predict** wax type with AI.
+
+---
+
+### 📂 **Example Dataset**
+A sample dataset (`test_data.xlsx`) is included for demonstration purposes. It contains Vis-NIR spectral readings and hydroprocessing grades for various wax samples.
+
+
+---
+
+### 🤝 **Contributors**
+- **University of Cádiz (AGR-291 Research Group)**
+  - Specializing in hydrocarbon characterization and spectroscopy.
+
+---
+
+### 📜 **License**
+This project is licensed under the GNU GENERAL PUBLIC License. See `LICENSE` for details.
 
