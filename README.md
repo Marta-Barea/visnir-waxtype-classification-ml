@@ -37,15 +37,15 @@ This repository contains the source code for all data processing and the applica
 
 
    <pre markdown="1"> ```bash
-git clone https://github.com/Marta-Barea/visnir-waxtype-classification-ml
-cd visnir-waxtype-classification-ml </pre>
+                         git clone https://github.com/Marta-Barea/visnir-waxtype-classification-ml
+                         cd visnir-waxtype-classification-ml </pre>
 
 ### Running the Shiny Application
 1. Place `app.R`, `svm.rds`, `svr.rds`and `test_data.xlsx` in the same folder.
 2. In your R console, run: 
    
    <pre markdown="1"> ```R 
-      shiny::runApp("app.R") </pre>
+                         shiny::runApp("app.R") </pre>
 
 3. Use the web interface to:
 - 📁 **Upload** `.csv` or `.xlsx` data files.
